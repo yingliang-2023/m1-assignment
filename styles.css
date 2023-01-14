@@ -13,6 +13,16 @@ h1{
     margin-top: 100px;
 }
 
+h3.adoptionfee{
+    text-align: center;
+}
+
+h3.workinghour{
+    text-align: center;
+    margin-top: 20px;;
+}
+
+
 figure{
     margin: 30px auto;
     font-style: italic;
@@ -22,7 +32,10 @@ figure{
 }
 
 
-
+p.workinghour{
+    font-size: 25px;
+    text-align: center;
+}
 
 
 li{
@@ -41,7 +54,10 @@ nav{
     
 }
 
-
+div.fee{
+    text-align: center;
+    font-size: 25px;
+}
 
 td {
     border:solid black 1px;
