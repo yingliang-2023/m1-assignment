@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Local Pet Adoption Service</title>
+
+
+
+</head>
+
+
+
+<header> 
+<img src="images/banner.png" atl="banner" width="1880x">
+<h1 >Local  Pet  Adoption  Service</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="/index.html"> Home Page </a></li>
+        <li><a href="/contact.html">Contact</a> </li>
+        <li><a href="/information.html">Information</a></li>
+        <li><a href="/testimonial.html">Testimonial</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+    </ul>
+    </nav>
+
+
+<body>
+
+<section>
+    <ul id="gallery">
+
+    </ul>
+</section>
+
+<script>
+    var photo=[];
+    var fileNames=[];
+    var imageList=[];
+    var image;
+    var openList="<li class='gallery'>";
+    var closeList="</li>";
+
+    for (var i=0; i<6; i++){
+        fileNames.push("image"+(i+1));
+        photo.push("<img src='images/gallery/"+fileNames[i]+".png'>");
+        image=openList+photo[i]+closeList;
+        imageList.push(image);
+    }
+
+    //insert all final image elements in the album.
+
+    //Display
+    document.getElementById("gallery").innerHTML=imageList.join(" ");
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
