@@ -95,5 +95,21 @@ section{
 #gallery img{
     width: 500px;
     height: 300px;
-    margin: 50px 30px;
+    margin: 50px 10px;
+}
+
+.caption{
+    display: inline-block;
+    width: 500px;
+    position: relative;
+    right: 510px;
+    bottom: 50px;
+    margin:0 auto;
+   background-color: aliceblue;
+}
+
+#caption{
+    font-size:xx-large;
+    width: 1000px;
+    text-align: center;
 }

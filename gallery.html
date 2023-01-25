@@ -33,22 +33,34 @@
 
 <section>
     <ul id="gallery">
+        
+    </ul>
+
+    <ul id="caption">
 
     </ul>
+
+
+
+
 </section>
 
+<!--images added-->
 <script>
+    var caption=["Affenpinscher","Airedale Terrier","Akbash","Alaskan Malamute","American Eskimo Dog","American Water Spaniel"]
     var photo=[];
     var fileNames=[];
     var imageList=[];
     var image;
+    var capOpentag="<span class='caption'>"
+    var capClosetag="</span>"
     var openList="<li class='gallery'>";
     var closeList="</li>";
 
     for (var i=0; i<6; i++){
         fileNames.push("image"+(i+1));
         photo.push("<img src='images/gallery/"+fileNames[i]+".png'>");
-        image=openList+photo[i]+closeList;
+        image=openList+photo[i]+closeList+capOpentag+caption[i]+capClosetag;
         imageList.push(image);
     }
 
@@ -59,7 +71,9 @@
 
 </script>
 
+<!--Insert Caption-->
 
+</script>
 
 
 
