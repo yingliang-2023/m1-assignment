@@ -1,4 +1,8 @@
+label,option{
+    display: block;
+    margin: 10px;
 
+}
 
 h1{
     color: blue;
@@ -113,3 +117,27 @@ section{
     width: 1000px;
     text-align: center;
 }
+
+.description{
+    display:block;
+    position: relative;  
+    margin: 400px; 
+    background-color: rgb(234, 229, 222); 
+    width: 400px;
+    bottom: 1520px;
+    right:120px;
+
+
+}
+
+.appear-hover{
+   color:red;
+}
+
+#gallery img:hover{
+   width:400px;
+}
+
+#gallery img:hover~.description{
+    color:blue;
+ }

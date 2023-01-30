@@ -30,19 +30,38 @@
     <form action="/signup" method="post">
         <fieldset>
             <legend>Contact</legend>
-        <label>What is your full name? </label><br>
-        <br><input type="text" name="name"><br>
-        <br><label>What is your Phone Number?</label><br>
-        <br><input type="text" name="phone"><br>
-        <br><label>What is your email?</label><br>
-        <br><input type="email" name="email"><br>
-        <br><label>How do you hear about us?</label><br>
-        <input type="radio" name="method" value="friends">Friends<br>
-        <input type="radio" name="method" value="Facebook">Facebook <br>
-        <input type="radio" name="method" value="Google">Google<br>
-        <input type="radio" name="method" value="Instagram">Instagram<br>
+        <label>What is your full name? </label>
+        <input type="text" name="name">
+        <label>How do we contact you?</label>
+       
+        <select>
+            <option>Email</option>
+            <option>Phone</option><br>
+        </select>
 
-        <br><label>Do you have any suggestions?</label><br>
+            <div class="email">
+                <label>Enter your email</label>
+                <input type="text" name="email">
+            </div>
+
+            <div class="phone">
+                <label>Enter your phone</label>
+                <input type="number" name="phone">
+            </div>
+
+
+            
+    
+
+      
+       
+        <label>How do you hear about us?</label>
+        <input type="radio" name="method" value="friends">Friends
+        <input type="radio" name="method" value="Facebook">Facebook 
+        <input type="radio" name="method" value="Google">Google
+        <input type="radio" name="method" value="Instagram">Instagram
+
+        <label>Do you have any suggestions?</label>
         <textarea rows="15" cols="50"></textarea>
         <br><input type="submit">
 
@@ -57,6 +76,6 @@
 
 
 
-
+<script src="/js/contact.js"></script>
 </body>
 </html>
