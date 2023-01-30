@@ -141,3 +141,9 @@ section{
 #gallery img:hover~.description{
     color:blue;
  }
+
+ #email-div, #phone-div{
+    visibility: hidden;
+   
+
+ }
