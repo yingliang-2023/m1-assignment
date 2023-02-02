@@ -1,51 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Local Pet Adoption Service</title>
-
-
-
-</head>
-
-
-
-<header> 
-<img src="images/banner.png" atl="banner" width="1880x">
-<h1 >Local  Pet  Adoption  Service</h1>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="/index.html"> Home Page </a></li>
-        <li><a href="/contact.html">Contact</a> </li>
-        <li><a href="/information.html">Information</a></li>
-        <li><a href="/testimonial.html">Testimonial</a></li>
-        <li><a href="/gallery.html">Gallery</a></li>
-    </ul>
-    </nav>
-
-
-<body>
-
-
-    
-
-    <ul id="gallery">
-        
-    </ul>
-
-   
-
-
-
-
-<!--
-<script>
-    var caption=["Affenpinscher","Airedale Terrier","Akbash","Alaskan Malamute","American Eskimo Dog","American Water Spaniel"]   
+var caption=["Affenpinscher","Airedale Terrier","Akbash","Alaskan Malamute","American Eskimo Dog","American Water Spaniel"]   
     var photo=[];
     var fileNames=[];
     var imageList=[];
@@ -70,26 +23,5 @@
         imageList.push(image);
     }
 
-    // for (var j=0; j<3; j++){
-    //     descriptionText=descriptionOpenTag+description[j]+descriptionCloseTag;
-    //     descriptionList.push(descriptionText);
-    // }
-
-    //Display
+   
     document.getElementById("gallery").innerHTML=imageList.join(" ");
-    // document.getElementById("description").innerHTML=descriptionList.join(" ");
-</script>
-
--->
-
-
-<script src="js/gallery.js"></script>
-
-
-
-</body>
-
-
-
-
-</html>
