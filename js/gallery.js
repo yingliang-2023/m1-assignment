@@ -34,7 +34,7 @@ var caption=["Affenpinscher","Airedale Terrier","Akbash","Alaskan Malamute","Ame
             var heading=caption[j];
             var content=description[j]; 
           
-            var listName="<div><div class='infobox'><h2>"+heading+"</h2><p>"+content+"</p></div></div>"
+            var listName="<div><div class='infobox'><h2>"+heading+"</h2><p>"+content+"</p><button>Close</button></div></div>"
             infoList.push(listName)
            
            }
@@ -53,5 +53,18 @@ document.getElementsByClassName("description")[i].addEventListener("click",show)
 
 function show(){
 //    alert("hi")
-    document.querySelectorAll(".infobox")[0].classList.add('showinfo');  
+    document.querySelectorAll(".infobox")[3].classList.add('showinfo');  
+};
+
+
+//close button
+
+for(var i=0;i<6;i++){
+document.querySelectorAll("button").addEventListener("click",close);
+}
+
+function close(){
+  
+    document.querySelectorAll(".infobox")[0].classList.remove('showinfo');  
+
 };
