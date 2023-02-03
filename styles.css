@@ -101,6 +101,7 @@ table{
 div#gallery{
     text-align: center;
     margin:50px auto;
+    
 }
 
 
@@ -108,6 +109,7 @@ div.gallery{
     display: inline-block;
     padding: 10px 0;
     position: relative;
+ 
 }
 
 #gallery img{
@@ -125,6 +127,7 @@ div.gallery{
     position:relative;
     bottom: 80px;
     right:35px;
+   
  }
 
 
@@ -137,6 +140,7 @@ div.gallery{
     width: 400px;
     opacity: 0;  
     cursor:pointer;
+   
 
 }
 
@@ -160,10 +164,13 @@ div.gallery{
 }
 
 .infobox{
-    background-color: aqua;
+    background-color: rgb(133, 144, 199);
+    opacity:0.8;
     width: 500px;
     position:absolute;
+    bottom:50%;
     visibility:hidden;
+    border-style:groove;
 }
 
 
@@ -174,4 +181,6 @@ div.gallery{
 
 button{
     cursor: pointer;
+    margin-bottom: 10px;
 }
+
