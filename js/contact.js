@@ -7,17 +7,34 @@
 // email_option.addEventListener("onchange", showeInputBox());
 
 
+// function showInputBox(){
+//     var selectform=document.getElementById("select-div");
+//     var options=selectform.options[selectform.selectedIndex].value;
+
+//     if(options==="email"){
+//         showemail();
+    
+//     }else if(options==="phone"){
+//         showphone();
+//     };
+    
+    
+// }
+
+
 function showInputBox(){
     var selectform=document.getElementById("select-div");
     var options=selectform.options[selectform.selectedIndex].value;
 
-    if(options==="email"){
-        showemail();
-    
-    }else if(options==="phone"){
-        showphone();
-    };
-    
+    switch(options){
+
+        case "email":
+            showemail();
+            break;
+        case "phone":
+            showphone();
+            break;
+    }
     
 }
 
