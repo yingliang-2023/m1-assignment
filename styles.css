@@ -135,7 +135,8 @@ div.gallery{
     left:50px;
     background-color: rgb(242, 190, 17); 
     width: 400px;
-    opacity: 1;  /*等下记得改回来！*/
+    opacity: 0;  
+    cursor:pointer;
 
 }
 
@@ -171,3 +172,6 @@ div.gallery{
 }
 
 
+button{
+    cursor: pointer;
+}

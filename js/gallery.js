@@ -61,11 +61,11 @@ function show(){
 //close button
 
 for(var i=0;i<6;i++){
-document.querySelectorAll("button").addEventListener("click",close);
+document.querySelectorAll("button")[i].addEventListener("click",close);
 }
 
 function close(){
-  
+    alert("Do you really want to close?");
     document.querySelectorAll(".infobox")[0].classList.remove('showinfo');  
 
 };
