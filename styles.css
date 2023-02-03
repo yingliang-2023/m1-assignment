@@ -92,22 +92,37 @@ table{
 }
 
 
-#gallery img{
-    top:160px;
-   position: relative;
-    width: 500px;
-    height: 300px;
-    margin: 50px auto;
+
+/*Gallery*/
+
+div#gallery{
+    text-align: center;
+    margin:50px auto;
 }
+
+
+div.gallery{
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+}
+
+#gallery img{
+    width: 500px;
+    height: 300px; 
+    margin-right: 100px;;
+    margin-bottom: 0%;
+    position: relative;
+    
+    }
 
 .caption{
-   
-    width: 500px;
-    position: absolute;
+    font-size: xx-large;
     background-color: antiquewhite;
- 
-
-}
+    position:relative;
+    bottom: 80px;
+    right:35px;
+ }
 
 
 .description{
@@ -115,12 +130,9 @@ table{
     position:relative;
     bottom: 200px;
     left:50px;
-    
-  
-  
-    background-color: rgb(234, 229, 222); 
+    background-color: rgb(242, 190, 17); 
     width: 400px;
-    opacity: 0;
+    opacity: 1;  /*等下记得改回来！*/
 
 }
 
@@ -132,9 +144,29 @@ table{
 
  .gallery:hover .description{
     opacity:0.8;
+    
  }
 
- ul{
+/*infomation box*/
+
+#infomationBox{
     text-align: center;
+    position: fixed;
+    bottom: 50px;
+    left:450px;
+    bottom:250px;
+}
+
+.infobox{
+    background-color: aqua;
+    width: 500px;
     position:absolute;
- }
+    visibility:hidden;
+}
+
+
+.showinfo{
+    visibility: visible;
+}
+
+
