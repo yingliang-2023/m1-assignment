@@ -53,7 +53,8 @@ document.getElementsByClassName("description")[i].addEventListener("click",show)
 
 function show(){
 //    alert("hi")
-    document.querySelectorAll(".infobox")[3].classList.add('showinfo');  
+
+    document.querySelectorAll(".infobox")[0].classList.add('showinfo');  
 };
 
 
