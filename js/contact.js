@@ -1,11 +1,24 @@
 
-var email_option =document.getElementById("email-selected");
-email_option.addEventListener("click", showemail);
 
 
-function showemail(){
-    document.getElementById("email-div").style.visibility="visible";
-   
+
+
+// var email_option =document.getElementsById("select-div");
+// email_option.addEventListener("onchange", showeInputBox());
+
+
+function showInputBox(){
+    var selectform=document.getElementById("select-div");
+    var options=selectform.options[selectform.selectedIndex].value;
+
+    if(options==="email"){
+        showemail();
+    
+    }else if(options==="phone"){
+        showphone();
+    };
+    
+    
 }
 
 
@@ -13,11 +26,15 @@ function showemail(){
 // phone_option.addEventListener('click ', showphone);
 
 
-// function showphone(){
-//     document.getElementById("phone-div").style.visibility="visible";
-// }
+function showphone(){
+    document.getElementById("phone-div").style.visibility="visible";
+    document.getElementById("email-div").style.visibility="hidden";
+}
 
-
+function showemail(){
+    document.getElementById("email-div").style.visibility="visible";
+    document.getElementById("phone-div").style.visibility="hidden";
+}
 
 // var select_div=document.querySelector("select");
 // select_div.addEventListener("change", show());
