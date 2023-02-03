@@ -29,6 +29,14 @@ var caption=["Affenpinscher","Airedale Terrier","Akbash","Alaskan Malamute","Ame
    
     document.getElementById("gallery").innerHTML=imageList.join(" ");
 
+    
+   
+
+
+
+/*Insert Info box*/
+
+
     var infoList=[];
     for(var j=0; j<6;j++){
             var heading=caption[j];
@@ -44,28 +52,33 @@ var caption=["Affenpinscher","Airedale Terrier","Akbash","Alaskan Malamute","Ame
     document.getElementById("infomationBox").innerHTML=infoList.join(" ");
     
  
-/*Info box*/
+
+
 
 for(var i=0;i<6;i++){
 document.getElementsByClassName("description")[i].addEventListener("click",show);
-// document.querySelectorAll(".infobox")[0].classList.add('showinfo')
+document.getElementsByClassName("description")[i].setAttribute("id",i);
+
 }
 
-function show(){
-//    alert("hi")
 
-    document.querySelectorAll(".infobox")[0].classList.add('showinfo');  
+
+
+function show(){
+    var num=this.id;
+    document.querySelectorAll(".infobox")[num].classList.add('showinfo');  
 };
 
 
 //close button
 
-for(var i=0;i<6;i++){
-document.querySelectorAll("button")[i].addEventListener("click",close);
+for(var j=0;j<6;j++){
+document.querySelectorAll("button")[j].addEventListener("click",close);
+document.getElementsByTagName("button")[j].setAttribute("id",j);
 }
 
 function close(){
-    alert("Do you really want to close?");
-    document.querySelectorAll(".infobox")[0].classList.remove('showinfo');  
+    var num=this.id;
+    document.querySelectorAll(".infobox")[num].classList.remove('showinfo');  
 
 };
