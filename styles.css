@@ -92,7 +92,7 @@ table{
 }
 
 #email-div, #phone-div{
-    visibility: hidden;
+     display: none;
 }
 
 
