@@ -18,7 +18,7 @@ var caption=["Affenpinscher","Airedale Terrier","Akbash","Alaskan Malamute","Ame
     //insert all final image elements in the album.
     for (var i=0; i<6; i++){
         fileNames.push("image"+(i+1));
-        photo.push("<img src='images/gallery/"+fileNames[i]+".png'>");
+        photo.push("<img src='images/gallery/"+fileNames[i]+".png' alt="+fileNames[i]+">");
         
         descriptionText=descriptionOpenTag+description[i]+descriptionCloseTag;
         image=openList+photo[i]+descriptionText+capOpentag+caption[i]+capClosetag+closeList;
@@ -82,3 +82,72 @@ function close(){
     document.querySelectorAll(".infobox")[num].classList.remove('showinfo');  
 
 };
+
+
+//light box
+
+$('.gallery img').click(function(){
+    
+    $('.backdrop').animate({'opacity':'.50'}, 300, 'linear').css('display', 'block');
+    $('.box').fadeIn();
+
+    //Check if lightbox has an image
+    if ($('.box').contents('img')) {
+        $('.box').contents().remove('img'); //If true, clear image
+    }
+
+    //Get text content in attribute
+    var $altvalue = $(this).attr('alt'); //or var altvalue = $(this).attr('alt');
+console.log($altvalue);
+
+//     switch($altvalue){
+//         case "image1":
+//              // var img = $('#gallery:nth-child(1) img').clone(); //Duplicate DOM element
+//         var imgClone='<img src="images/gallery/image1.png"></img>'
+//         break;
+//         $('.box').append(imgClone); //Insert duplicated element in another element
+//         case "image2":
+//         var imgClone='<img src="images/gallery/image2.png"></img>'
+//         $('.box').append(imgClone);
+//         break;
+//         case "image3":
+//             var imgClone='<img src="images/gallery/image3.png"></img>'
+//             $('.box').append(imgClone);
+//         break;
+//     }
+
+// };
+
+
+        
+    
+    if ($altvalue=="image1") {
+        // var img = $('#gallery:nth-child(1) img').clone(); //Duplicate DOM element
+        var imgClone='<img src="images/gallery/image1.png"></img>'
+        $('.box').append(imgClone); //Insert duplicated element in another element
+    }else if($altvalue=="image2"){
+        var imgClone='<img src="images/gallery/image2.png"></img>'
+        $('.box').append(imgClone);
+    }else if($altvalue=="image3"){
+        var imgClone='<img src="images/gallery/image3.png"></img>'
+        $('.box').append(imgClone);
+    }else if($altvalue=="image4"){
+        var imgClone='<img src="images/gallery/image4.png"></img>'
+        $('.box').append(imgClone);
+    }else if($altvalue=="image5"){
+        var imgClone='<img src="images/gallery/image5.png"></img>'
+        $('.box').append(imgClone);
+    }else if($altvalue=="image6"){
+        var imgClone='<img src="images/gallery/image6.png"></img>'
+        $('.box').append(imgClone);
+    };
+
+});
+
+/* Click to close lightbox */
+$('.close, .backdrop').click(function(){
+    $('.backdrop').animate({'opacity':'0'}, 300, 'linear', function(){
+        $('.backdrop').css('display', 'none');
+    });
+    $('.box').fadeOut();
+});
