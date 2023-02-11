@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,10 @@
     <title>Local Pet Adoption Service</title>
 </head>
 
-<header> 
+<header>
     <img src="images/banner.png" atl="banner" width="1880x">
-    <h1 >Local  Pet  Adoption  Service</h1>
-    </header>
+    <h1>Local Pet Adoption Service</h1>
+</header>
 
 
 
@@ -23,22 +24,22 @@
         <li><a href="/testimonial.html">Testimonial</a></li>
         <li><a href="/gallery.html">Gallery</a></li>
     </ul>
-    </nav>
+</nav>
 
 
 <body>
     <form action="/signup" method="post">
         <fieldset>
             <legend>Contact</legend>
-        <label>What is your full name? </label>
-        <input type="text" name="name">
-        <label>How do we contact you?</label>
-       
-        <select id="select-div" onchange="showInputBox()">
-            <option id="default-option" value="default">Pick your option</option>
-            <option id="email-selected" value="email" >Email</option>
-            <option id="phone-selected" value="phone">Phone</option><br>
-        </select>
+            <label>What is your full name? </label>
+            <input type="text" name="name">
+            <label>How do we contact you?</label>
+
+            <select id="select-div" onchange="showInputBox()">
+                <option id="default-option" value="default">Pick your option</option>
+                <option id="email-selected" value="email">Email</option>
+                <option id="phone-selected" value="phone">Phone</option><br>
+            </select>
 
             <div id="email-div">
                 <label>Enter your email</label>
@@ -51,32 +52,33 @@
             </div>
 
 
-            
-    
-
-      
-       
-        <label>How do you hear about us?</label>
-        <input type="radio" name="method" value="friends">Friends
-        <input type="radio" name="method" value="Facebook">Facebook 
-        <input type="radio" name="method" value="Google">Google
-        <input type="radio" name="method" value="Instagram">Instagram
-
-        <label>Do you have any suggestions?</label>
-        <textarea rows="15" cols="50"></textarea>
-        <br><input type="submit">
-
-        
 
 
 
 
-    </fieldset>
+
+            <label>How do you hear about us?</label>
+            <input type="radio" name="method" value="friends">Friends
+            <input type="radio" name="method" value="Facebook">Facebook
+            <input type="radio" name="method" value="Google">Google
+            <input type="radio" name="method" value="Instagram">Instagram
+
+            <label>Do you have any suggestions?</label>
+            <textarea rows="15" cols="50"></textarea>
+            <br><input type="submit">
+
+
+
+
+
+
+        </fieldset>
     </form>
 
 
 
 
-<script src="/js/contact.js"></script>
+    <script src="/js/contact.js"></script>
 </body>
+
 </html>
